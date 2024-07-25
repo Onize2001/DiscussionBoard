@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="./images/Ellipse 1557.png" alt="logo">
+        </div>
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search-bar" onkeyup="searchItems()" placeholder="Search" class="search-bar">
+        </div>
+        <div class="top-nav-icons">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <i class="fa fa-comment" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <!-- Vertical Sidebar -->
+    <div class="container">
+        <aside class="vertical-sidebar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="./menu.html"><i class="fas fa-th-large"></i></a></li>
+                    <li><a href="./calendar.html"><i class="fas fa-calendar-alt"></i></a></li>
+                    <li><a href="./file.html"><i class="fas fa-file-alt"></i></a></li>
+                    <li><a href="./settings.html"><i class="fas fa-cog"></i></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <aside class="sidebar">
+            <div class="sidebar-title" onclick="toggleMenu()">
+                TEC Community <span id="dropdown-icon" class="dropdown-icon">▼</span> 
+            </div>
+            <nav>
+                <ul id="menu-items">
+                    <li><a class="active" href="#discussions"><i class="fas fa-comments"></i> Discussions</a></li>
+                    <li><a href="#announcements"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                    <li><a href="#events"><i class="fas fa-calendar-alt"></i> Events </a><span>5</span></li>
+                    <li><a href="#community"><i class="fas fa-users"></i> Community</a></li>
+                    <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+                    <li><a href="#forms"><i class="fas fa-file-alt"></i> Forms</a></li>
+                    <li><a href="#memberships"><i class="fas fa-id-card"></i> Memberships</a><span>5</span></li>
+                    <h4>Other Stuffs</h4>
+                    <li><a href="#challenges"><i class="fas fa-tasks"></i> Challenges</a></li>
+                    <li><a href="#loyalty"><i class="fas fa-star"></i> Loyalty</a></li>
+                    <li><a href="#tasks"><i class="fas fa-check-square"></i> Tasks</a></li>
+                    <li><a href="#chat"><i class="fas fa-comments"></i> Chat rooms</a></li>
+                    <li><a href="#career"><i class="fas fa-briefcase"></i> Career</a></li>
+                </ul>
+            </nav>
+            <div class="profile-container">
+                <img src="./images/profile-image.png" alt="Vincent Mayaki" class="profile-picture">
+                <div class="profile-info">
+                    <h3 class="profile-name">Vincent Mayaki</h3>
+                    <p class="profile-email">mayaki.vincent@gmail.com</p>
+                </div>
+                <div class="options">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+        </aside>
+
+        <section class="main-section">
+            <div class="headbar">
+                <div id="discussions" class="headbar-title">Discussion Boards</div>
+                <div class="controls">
+                    <button class="active"><i class="fa fa-sliders"></i>Sort Post</button>
+                    <button><i class="fa fa-add"></i>New Post</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="./images/car.jpg" alt="">
+            </div>
+            <div id="content-item" class="navbar-section">
+                <button class="active">All</button>
+                <button>What is new</button>
+                <button>Roadmap</button>
+                <button>Report a bug</button>
+                <button>Feedback</button>
+                <button>Report a bug</button>
+                <button>Report a bug</button>
+                <button><i class="fa fa-sliders"></i></button>
+            </div>
+            <section class="content-container">
+                <div class="main-content">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="./images/profile-image.png" alt="profile-img">
+                            <div>
+                                <strong>Vincent Mayaki</strong>
+                                <br>
+                                <small>Jan 1st</small>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p class="mainn">Hello from Bali! I am a creator in the health & wellness space and I am
+                                super excited to join the community!</p>
+                            <p>Many of you might know me from my journey in the health and wellness spher
+                                where I’ve passionately shared tips. Simple and transparent pricing that grows with you.
+                                Get a 30-day free trial on any plan. Pay less with quarterly or yearly </p>
+                        </div>
+
+                        <div class="small-div">
+                            <div class="photo-stack">
+                                <img src="./images/portrait-handsome-man-smiling.jpg" alt="photo" class="photo1">
+                                <img src="./images/businesswoman-executive-professional-success-concept.jpg" alt="photo"
+                                    class="photo2">
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="photo" class="photo3">
+                                <img src="./images/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign.jpg"
+                                    alt="photo" class="photo4">
+                            </div>
+
+                            <div class="text">
+                                <p>Liked by Siddhant and <span>5 others</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="poster">
+                            <p><i class="fa fa-thumbs-up"></i>Like</p>
+                            <p><i class="fa fa-comment"></i>Comments (5)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="post2">
+                        <div class="post-header2">
+                            <img src="./images/profile-image.png" alt="Profile Picture" class="profile-picture">
+                            <div class="post-info2">
+                                <h2>Tope Ajayi</h2>
+                                <p>Jan 1st</p>
+                            </div>
+                        </div>
+                        <div class="post-content2">
+                            <p>Hey everyone, I am looking for a couple folks in the ag tech space to start a mastermind
+                                with. Looking to start an ag tech business and would love to have some people around who
+                                know.</p>
+                            <img src="./images/earth.png" alt="Post Image" class="post-image2">
+                        </div>
+
+                        <div class="small-div">
+                            <div class="photo-stack">
+                                <img src="./images/portrait-handsome-man-smiling.jpg" alt="photo" class="photo1">
+                                <img src="./images/businesswoman-executive-professional-success-concept.jpg" alt="photo"
+                                    class="photo2">
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="photo" class="photo3">
+                                <img src="./images/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign.jpg"
+                                    alt="photo" class="photo4">
+                            </div>
+
+                            <div class="text">
+                                <p>Liked by Siddhant and <span>5 others</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="poster">
+                            <p><i class="fa fa-thumbs-up"></i>Like</p>
+                            <p><i class="fa fa-comment"></i>Comments (5)</p>
+                        </div>
+                    </div>
+                    <div class="post2">
+                        <div class="post-header2">
+                            <img src="./images/profile-image.png" alt="Profile Picture" class="profile-picture">
+                            <div class="post-info2">
+                                <h2>Tope Ajayi</h2>
+                                <p>Jan 1st</p>
+                            </div>
+                        </div>
+                        <div class="post-content2">
+                            <p>Hey everyone, I am looking for a couple folks in the ag tech space to start a mastermind
+                                with. Looking to start an ag tech business and would love to have some people around who
+                                know.</p>
+                            <img src="./images/sitting room.png" alt="Post Image" class="post-image2">
+                        </div>
+
+                        <div class="small-div">
+                            <div class="photo-stack">
+                                <img src="./images/portrait-handsome-man-smiling.jpg" alt="photo" class="photo1">
+                                <img src="./images/businesswoman-executive-professional-success-concept.jpg" alt="photo"
+                                    class="photo2">
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="photo" class="photo3">
+                                <img src="./images/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign.jpg"
+                                    alt="photo" class="photo4">
+                            </div>
+
+                            <div class="text">
+                                <p>Liked by Siddhant and <span>5 others</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="post-footer">
+                        <div class="poster">
+                            <p><i class="fa fa-thumbs-up"></i>Like</p>
+                            <p><i class="fa fa-comment"></i>Comments (5)</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="side-bar">
+                    <div class="sidebar-section">
+                        <h3>Admins</h3>
+                        <ul class="admins">
+                            <li>
+                                <img src="./images/profile-image.png" alt="profile-img">
+
+                                <div>
+                                    <h4>Lisa Jones Smith</h4>
+                                    <p>Co-founder</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="profile-img">
+                                <div>
+                                    <h4>Lisa Jones</h4>
+                                    <p>Co-founder</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3>Top Contributors</h3>
+                        <ol class="top-contributors">
+                            <li>
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="profile-img">
+
+                                <div>
+                                    <h4>Kalu Osagbemi</h4>
+                                    <p>Co-founder</p>
+                                    <span>+432 pts</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="profile-img">
+
+                                <div>
+                                    <h4>Tope Ajayi</h4>
+                                    <p>Co-founder</p>
+                                    <span>+432 pts</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./images/business-man-smiling-portrait.jpg" alt="profile-img">
+
+                                <div>
+                                    <h4>Vincent Mayaki</h4>
+                                    <p>Co-founder</p>
+                                    <span>+432 pts</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
