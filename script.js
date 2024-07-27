@@ -1,15 +1,18 @@
 function toggleMenu() {
     var menuItems = document.getElementById('menu-items');
-    var dropdownIcon = document.getElementById('dropdown-icon');
+    var dropdownIcon = document.getElementById('dropdown');
     
     if (menuItems.style.display === 'none' || menuItems.style.display === '') {
         menuItems.style.display = 'block';
-        dropdownIcon.textContent = '▼'; // Change to down arrow
+        dropdownIcon.classList.remove('fa-caret-right');
+        dropdownIcon.classList.add('fa-caret-down');
     } else {
         menuItems.style.display = 'none';
-        dropdownIcon.textContent = '►'; // Change to right arrow
+        dropdownIcon.classList.remove('fa-caret-down');
+        dropdownIcon.classList.add('fa-caret-right');
     }
 }
+
 
 function searchItems() {
     var input, filter, ul, li, i, txtValue, div;
